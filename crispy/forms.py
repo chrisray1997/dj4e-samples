@@ -7,12 +7,18 @@ class BasicForm(forms.Form):
         validators.MinLengthValidator(2, "Please enter 2 or more characters")
     ])
     mileage = forms.IntegerField()
-    purchase_date = forms.DateField()
+    
+    # add widget to date field for picking date easier 
+    purchase_date = forms.DateField(
+        widget=forms.TextInput(     
+        attrs={'type': 'date'} 
+    )
+    )
 
 # References 
 
-# https://docs.djangoproject.com/en/3.0/ref/forms/api/
-# https://docs.djangoproject.com/en/3.0/ref/forms/fields/#datefield
-# https://docs.djangoproject.com/en/3.0/ref/forms/validation/#using-validation-in-practice
-# https://docs.djangoproject.com/en/3.0/ref/validators/
+# https://docs.djangoproject.com/en/4.2/ref/forms/api/
+# https://docs.djangoproject.com/en/4.2/ref/forms/fields/#datefield
+# https://docs.djangoproject.com/en/4.2/ref/forms/validation/#using-validation-in-practice
+# https://docs.djangoproject.com/en/4.2/ref/validators/
 

@@ -45,6 +45,7 @@ urlpatterns = [
     path('forums/', include('forums.urls')),
     path('pics/', include('pics.urls')),
     path('favs/', include('favs.urls')),
+    path('favwc/', include('favwc.urls')),
     path('favsql/', include('favsql.urls')),
     path('rest/', include('rest.urls')),
     path('autos/', include('autos.urls')),
@@ -54,6 +55,7 @@ urlpatterns = [
     path('util/', include('util.urls')),
     path('well/', include('well.urls')),
     path('tagme/', include('tagme.urls')),
+    path('zip/', include('zip.urls')),
 ]
 
 # Serve the static HTML

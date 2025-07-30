@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     'pics.apps.PicsConfig',
     'rest.apps.RestConfig',
     'favs.apps.FavsConfig',
+    'favwc.apps.FavwcConfig',
     'favsql.apps.FavsqlConfig',
     'autos.apps.AutosConfig',
     'cats.apps.CatsConfig',
@@ -69,6 +70,7 @@ INSTALLED_APPS = [
     'util.apps.UtilConfig',
     'well.apps.WellConfig',
     'tagme.apps.TagmeConfig',
+    'zip.apps.ZipConfig',
 ]
 
 # When we get to tagging

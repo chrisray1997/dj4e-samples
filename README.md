@@ -21,18 +21,22 @@ Then checkout this repository:
     cd ...wherever...
     git clone https://github.com/csev/dj4e-samples.git
     cd dj4e-samples
-    virtualenv .venv
+    python3.11 -m venv .venv
     source .venv/bin/activate
     python --version
     pip install -r requirements42.txt
+    python -m django --version
 
     python manage.py migrate
     python manage.py createsuperuser --username dj4e-samples
     # python manage.py changepassword dj4e-samples
     # dj4e_nn_!
 
-Running Locally on the Mac
---------------------------
+    ...
+    deactivate
+
+Running Locally on the Mac once the venv exists
+-----------------------------------------------
 
 If you have Django installed on your local computer you can test any of the sample
 applications by going into the folder and starting the server:
